@@ -3,9 +3,9 @@
     android:id="@+id/main_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="by.jetfirer.weddingcamera.MainActivity">
+    tools:context="by.jetfirer.weddingcamera.activity.MainActivity">
 
-    <by.jetfirer.weddingcamera.NoScrollViewPager
+    <by.jetfirer.weddingcamera.widget.NoScrollViewPager
         android:id="@+id/main_view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

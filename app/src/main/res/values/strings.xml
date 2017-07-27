@@ -1,13 +1,17 @@
 <resources>
     <string name="app_name">Wedding Camera</string>
 
-    <string name="start_video">Понеслась!</string>
     <string name="default_description">Default description</string>
 
     <string name="text_1">Выберите место съёмки своей мечты</string>
     <string name="text_2">Скажите нам что-нибудь приятное на камеру</string>
-    <string name="text_3">Пожалуйста, верните чудо-телефон на место, чтобы другие гости тоже могли им воспользоваться</string>
 
     <string name="done_1">Выбрали!</string>
     <string name="done_2">Сказать</string>
+
+    <string name="success_dialog_title">Вы прекрасны!</string>
+    <string name="success_dialog_message">Пожалуйста, верните чудо-телефон на место, чтобы другие гости тоже могли им воспользоваться</string>
+
+    <string name="success_dialog_secret_title">Поздравляем!</string>
+    <string name="success_dialog_secret_message">Вы нашли секретик! Узнайте у молодожёнов, что вам за это полагается :)\nP.S. И больше никому об этом не рассказывайте!</string>
 </resources>
