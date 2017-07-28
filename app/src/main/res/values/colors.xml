@@ -4,7 +4,14 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="ripple">#40000000</color>
+
     <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_alpha">#60000000</color>
+
+    <color name="transparent">#00000000</color>
+
     <color name="blue">#0099cc</color>
     <color name="blue_light">#33b5e5</color>
 </resources>

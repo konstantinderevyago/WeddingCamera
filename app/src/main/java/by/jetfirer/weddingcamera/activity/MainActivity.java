@@ -65,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
         final TextView title = view.findViewById(R.id.success_dialog_title);
         final ImageView image = view.findViewById(R.id.success_dialog_image);
         final ImageView secret = view.findViewById(R.id.success_dialog_secret);
+        final ImageView secretMan = view.findViewById(R.id.success_dialog_secret_man);
+        final ImageView secretWoman = view.findViewById(R.id.success_dialog_secret_woman);
         final TextView message = view.findViewById(R.id.success_dialog_message);
 
         Glide.with(this)
@@ -81,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
                 title.setText(R.string.success_dialog_secret_title);
                 message.setText(R.string.success_dialog_secret_message);
                 secret.setVisibility(View.GONE);
+                secretMan.setVisibility(View.VISIBLE);
+                secretWoman.setVisibility(View.VISIBLE);
 
                 Glide.with(MainActivity.this)
                         .load(R.drawable.minion_secret_success)
@@ -118,8 +122,6 @@ public class MainActivity extends AppCompatActivity {
                 return R.drawable.minions_happy_5;
             case 5:
                 return R.drawable.minions_happy_6;
-            case 6:
-                return R.drawable.minions_happy_7;
             default:
                 return R.drawable.minions_happy_6;
         }
