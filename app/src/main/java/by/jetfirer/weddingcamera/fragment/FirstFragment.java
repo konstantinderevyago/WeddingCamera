@@ -8,13 +8,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import by.jetfirer.weddingcamera.R;
 import by.jetfirer.weddingcamera.activity.MainActivity;
+import utils.Utils;
 
 /**
  * Created by Konstantin on 26.07.2017.
@@ -31,9 +30,7 @@ public class FirstFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_first, container, false);
         ButterKnife.bind(this, view);
 
-        Glide.with(this)
-                .load(R.drawable.minion_place)
-                .into(image);
+        Utils.loadGif(getContext(), R.drawable.minion_place, image);
 
         return view;
     }
