@@ -45,4 +45,13 @@
 
     </FrameLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="@dimen/default_padding"
+        android:text="@string/hash_tag"
+        android:textColor="@color/white"
+        android:textSize="@dimen/hash_tag_size" />
+
 </LinearLayout>

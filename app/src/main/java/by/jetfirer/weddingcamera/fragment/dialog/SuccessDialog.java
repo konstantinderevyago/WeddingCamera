@@ -39,6 +39,8 @@ public class SuccessDialog extends DialogFragment {
     @BindView(R.id.success_dialog_secret_woman)
     protected ImageView secretWoman;
 
+    private boolean isSecredClicked;
+
     private DialogInterface.OnCancelListener cancelListener;
 
     public static SuccessDialog getInstance(DialogInterface.OnCancelListener listener) {
@@ -71,15 +73,18 @@ public class SuccessDialog extends DialogFragment {
         }
     }
 
-    @OnClick(R.id.success_dialog_secret)
+    @OnClick(R.id.success_dialog_image)
     protected void onSecretClick() {
-        title.setText(R.string.secret_dialog_title);
-        message.setText(R.string.secret_dialog_message);
-        secret.setVisibility(View.GONE);
-        secretMan.setVisibility(View.VISIBLE);
-        secretWoman.setVisibility(View.VISIBLE);
+        if (!isSecredClicked) {
+            isSecredClicked = true;
+            title.setText(R.string.secret_dialog_title);
+            message.setText(R.string.secret_dialog_message);
+            secret.setVisibility(View.GONE);
+            secretMan.setVisibility(View.VISIBLE);
+            secretWoman.setVisibility(View.VISIBLE);
 
-        Utils.loadGif(getContext(), R.drawable.minion_secret_success, image);
+            Utils.loadGif(getContext(), R.drawable.minion_secret_success, image);
+        }
     }
 
     @Override

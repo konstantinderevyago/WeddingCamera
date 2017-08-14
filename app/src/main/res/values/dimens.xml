@@ -7,4 +7,5 @@
     <dimen name="secret_height">32dp</dimen>
     <dimen name="secret_width_big">50dp</dimen>
     <dimen name="secret_height_big">70dp</dimen>
+    <dimen name="hash_tag_size">30sp</dimen>
 </resources>
